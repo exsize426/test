@@ -1,10 +1,4 @@
-let human = {
-    age : 34,
-    firstName : 'james',
-    gender : 'men',
-    isAlive : true,
-    vagina : undefined,
-};
-
-const array = [1, 2, 3, 4];
-console.log(array[2])
+let message = prompt('Введите год', "");
+if (message == 2007) {
+    alert('Всем резать вены')
+}
