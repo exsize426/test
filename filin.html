@@ -6,36 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My problem</title>
     <style>
-          td {
-                width: 60px; 
-                height:60px; 
-                border: solid 1px yellow; 
-                text-align:center;
-            }
-
+          
     </style>
 </head>
 
 
 <body>
-    <div>
-        <table>
-            <tr>
-                <td rowspan="2" style = "background-color : green "> 1 </td>
-                <td> 2 </td>
-                <td> 3 </td>
-            </tr>
-            <tr>
-                <td> 4 </td>
-                <td> 5 </td>
-            </tr>
-            <tr>
-                <td> 6 </td>
-                <td colspan="2" style = "background-color : red "> 7 </td>
+    <form>
+        <h3> Анкета </h3>
+        <p><h4> Как вас зовут?</h4></p>
+            <p> <input type="text" placeholder="Введите имя" name="text" /> </p>
+        <p><h4> Введите дату и время:</h4></p>   
+            <p> <label for="date"> Дата:</label>
+                <input type="date" id="date" name="date" /></p>
+            <p> <label for="number" > Время:</label>
+                <input type="time" id="number" name="time" /></p>    
+        <p><h4> Ваш пол:</h4></p>
+            <p> <input type="radio" value="woman" name="gender" /> Женский </p>
+            <p> <input type="radio" value="man" name="gender" /> Мужской </p>
+            <p> <input type="radio" value="middle" name="gender"> Средний </p>
+        <p><h4> Где вы живете:</h4></p>
+            <p> <input type="checkbox" value="town" name="town" /> Город </p>
+            <p> <input type="checkbox" value="village" name="village" /> Село </p>
+            <p> <input type="checkbox" value="aul" name="aul" /> Аул </p>
+        <p><h4> Ваш возраст: </h4> </p>    
+            <p> <input type="number" step="1" min="1" maxlength="100" value="0"></p>
+        <p><h4> Модель вашего телефона: </h4></p>
+           <p> <label for="flagman"> Выбирите марку телефона:</label>
+                <select id="flagman" name="flagman">
+                    <option value="" disabled selected> - </option>
+                <option value="Samsung"> Samsung </option>
+                <option value="Motorolla"> Motorolla </option>
+                <option value="Honor"> Honor </option> 
+                </select>
+            </p>
+            <p><h4> Арбуз это? </h4></p>
+            <p> <input type="radio"  value="fruit" name="fruit" /> Фрукт </p>
+            <p> <input type="radio" value="berry" name="berry" /> Ягода </p>
+            <p> <input type="radio" value="begetable" name="begetable"> Овощ </p>
+        <p><h4> Куда впадает река Волга?</h4></p>
+            <p> <input type="radio"  value="1" name="1" /> Черное море
                 
-            </tr>
-        </table>
-</div>
+                <input type="color" style="background-color: black;"   value="volga"></p>
+            <p> <input type="radio"  value="2" name="2" /> Каспийское море 
+                
+                <input type="color" style="background-color: yellow;"   value="volga1"></p>    
+            <p> <input type="radio"  value="3" name="3" /> Белое море
+                <input type="color" style="background-color: white;" value="volga3">
+            </p>
+        <p><h4>Имеется ли семья:</h4></p>
+            <p> <label for="spisok"></label><br/>
+                <select id="spisok" multiple name="spisok">
+                    <optgroup label="Родители">
+                        
+                        <option value="mother"> Мама </option>
+                        <option value="father"> Папа </option>
+                    </optgroup>
+                    <optgroup label="Брак">
+                        <option value="husband"> Муж</option>
+                        <option value="wife"> Жена </option>
+                    </optgroup>
+                    <optgroup label="Дети">
+                        <option value="dautch"> Дочь </option>
+                        <option value="son"> Сын </option>
+                    </optgroup>
+                </select></p>
+
+
+        <p>
+            <input type="submit" value="Отправить" formenctype="post" formaction="./index.html">
+            <button type="reset"> Отменить </button>
+        </p>
+
+    </form>
+    
    <script src = './index.js'> </script>
 </body>
 
