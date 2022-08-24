@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My problem</title>
     <style>
-          
+          fieldset {
+                width: 300px;
+                height: 1200px;
+                border: solid 1px slateblue;
+          }
     </style>
 </head>
 
 
 <body>
     <form>
-        <h3> Анкета </h3>
+        <h3> Анкетирование </h3>
+            <fieldset>
+                <legend> Анкета </legend>
+            
         <p><h4> Как вас зовут?</h4></p>
             <p> <input type="text" placeholder="Введите имя" name="text" /> </p>
         <p><h4> Введите дату и время:</h4></p>   
@@ -41,9 +48,9 @@
                 </select>
             </p>
             <p><h4> Арбуз это? </h4></p>
-            <p> <input type="radio"  value="fruit" name="fruit" /> Фрукт </p>
-            <p> <input type="radio" value="berry" name="berry" /> Ягода </p>
-            <p> <input type="radio" value="begetable" name="begetable"> Овощ </p>
+            <p> <input type="radio"  value="fruits" name="fruit" /> Фрукт </p>
+            <p> <input type="radio" value="berry1" name="berry" /> Ягода </p>
+            <p> <input type="radio" value="begetable1" name="begetable"> Овощ </p>
         <p><h4> Куда впадает река Волга?</h4></p>
             <p> <input type="radio"  value="1" name="1" /> Черное море
                 
@@ -77,7 +84,7 @@
             <input type="submit" value="Отправить" formenctype="post" formaction="./index.html">
             <button type="reset"> Отменить </button>
         </p>
-
+        </fieldset>
     </form>
     
    <script src = './index.js'> </script>
