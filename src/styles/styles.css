@@ -1,17 +1,14 @@
-.div {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    color: darkorange;
-    border-radius: 100px;
-    display: inline-block;
-    
+.container {
+    width: 1140px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
 }
-.klas {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(42, 165, 102);
-    color: rgb(237, 22, 165);
-    
-    display: inline-block;
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #EFEFEF;
 }
