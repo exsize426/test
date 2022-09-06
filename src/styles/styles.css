@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal ;
+}
 .container {
     width: 1140px;
     height: 100%;
@@ -11,4 +15,115 @@
     font-size: 30px;
     line-height: 30px;
     color: #EFEFEF;
+}
+.header {
+    height: 1920px;
+    height: 800px;
+    padding: 39px 0 61px 0;
+    background: center / cover no-repeat url(../public/header.png);
+}
+.logo-wrapper{
+    width: 200px;
+    margin: 0 auto;
+}
+.logo-text {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    color: #EFEFEF;
+    line-height: 30px;
+    margin-top: 17px;
+    text-align: center;
+}
+.logo {
+    width: 83px;
+    height: 71px;
+    margin: 0 auto;
+}
+.next1 {
+    margin-top: 56px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 41px;
+    text-transform: uppercase;
+    color: darkorange;
+}
+.next2 {
+    margin-top: 25px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+.next3 {
+    position: absolute;
+    width: 292px;
+    height: 2px;
+    top: 282px;
+    background-color: #EFEFEF;
+}
+.next4{
+    position: absolute;
+    width: 292px;
+    height: 2px;
+    top: 282px;
+    left: 848px;
+    background-color: #EFEFEF;
+}
+.next5 {
+    margin-top: 27px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 41px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 123px;
+    
+    color: orange;
+}
+.next6 {
+    position: relative;
+    height: 77px;
+    width: 1144px;
+    margin-top: 27px;
+    text-align:justify;
+    font-size: 21px;
+    
+    color:#EFEFEF;
+    
+}
+.orange {
+    color: orange;
+}
+.next7 {
+    
+    
+    width: 313px;
+    height: 72px;
+    margin-left: 414px;
+    margin-top: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 1px 1px;
+}
+.next8 {
+    font-family:  'RobotoCondensed';
+    font-size: 19px;
+    color: #EFEFEF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 14px;
+}
+.next9 {
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.next10 {
+    width: 50px;
+    margin: 21px auto;
+
 }
